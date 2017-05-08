@@ -1,0 +1,26 @@
+[
+ {
+ "imagen":"public/ender.jpg",
+ "id": "1",
+ "titulo": "El Juego de Ender",
+ "autor": "Orson Scott Card",
+ "editorial": "Ediciones B / Zeta",
+ "Descripcion":"La Tierra se ve amenazada por la especie extraterrestre de los insectos, seres que se comunican telepáticamente y que se consideran totalmente distintos de los humanos, a los que quieren destruir. Para vencerles, la humanidad necesita de un genio militar y por ello se permite el nacimiento de Ender, que es el tercer hijo de una pareja en un mundo que ha limitado estrictamente a dos el número de descendientes."
+ },
+ { 
+ "imagen":"public/tronos.jpe",
+ "id": "2",
+ "titulo": "Juego de tronos",
+ "autor": "George R. R. Martin",
+ "editorial": "Gigamesh",
+ "Descripcion":"el invierno se acerca a los Siete Reinos. Lord Eddard Stark, señor de Invernalia, deja sus dominios para unirse a la corte del rey Robert Baratheon el Usurpador, hombre díscolo y otrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrar bastardos. Eddard Stark desempeñará el cargo de Mano del Rey e intentará desentrañar una maraña de intrigas que pondrá en peligro su vida... y la de los suyos. En un mundo cuyas estaciones duran décadas y en el que retazos de una magia inmemorial y olvidada surgen en los rincones más sombrios y maravillosos, la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder hacen del juego de tronos una poderosa trampa que atrapa en sus fauces a los personajes... y al lector."
+ },
+ { 
+ "imagen":"public/robot.jpg",
+ "id": "3",
+ "titulo": "I robot",
+ "autor": "Isaac Asimov",
+ "editorial": "Edhasa",
+ "Descripcion": "¿qué diferencia hay entre un robot inteligente y un ser humano?, ¿puede el creador de un robot predecir su comportamiento?, ¿debe la lógica determinar lo que es mejor para la humanidad? A través de una serie de historias conectadas entre sí por el personaje de la robopsicóloga Susan Calvin, en las que aparecen todo tipo de máquinas inteligentes -  robots que leen el pensamiento, robots que se vuelven locos, robots con sentido del humor o robots políticos-, Asimov inventa unos robots cada vez más perfectos, que llegan a convertirse en un desafío para sus creadores."
+}
+]

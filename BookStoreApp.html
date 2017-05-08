@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app="App">
+
+<head>
+    <meta charset="utf-8">
+    <title>Todos $http</title>
+    <script>
+        document.write("<base href=\"" + document.location + "\" />");
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="BookStoreApp.html" class="navbar-brand">
+                    <p class="head">Inicio</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-controller="TodoCtrl">
+        <h1>LIBROS</h1>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="buscar">Buscar </label> <label class="control-label" for="name"> Titulo:</label>
+                <input type='text' ng-model='searchText' />
+                <label for="buscar">  Ordenar </label>
+                <select ng-model='searchText'>
+				    <option value="{{todo.titulo}}">Titulo</option>
+				    <option value="{{todo.editorial}}">Editorial</option>
+				</select>
+            </div>
+            <ul>
+                <li ng-repeat="todo in todos | filter:searchText"><img class="col-md-1 col-sm-5 col-xs-5 col-md-offset-1" src="{{todo.imagen}}" alt="img">
+                    <h3>{{todo.id}} <a href="index2.html">{{todo.titulo}} </a><br></h3>
+                    <h5> <b>{{todo.autor}} <br> {{todo.editorial}}</b> <br> </h5>{{todo.Descripcion}}</li>
+            </ul>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+</html>
