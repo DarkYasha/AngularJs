@@ -16,6 +16,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script>
+    // ...and add 'ui.router' as a dependency
+    var myApp = angular.module('myApp', ['ui.router']);
+    </script>
 </head>
 
 <body>
@@ -35,17 +40,31 @@
                 <label for="buscar">Buscar </label> <label class="control-label" for="name"> Titulo:</label>
                 <input type='text' ng-model='searchText' />
                 <label for="buscar">  Ordenar </label>
-                <select ng-model='searchText'>
-				    <option value="{{todo.titulo}}">Titulo</option>
-				    <option value="{{todo.editorial}}">Editorial</option>
+                <select ng-model='order'>
+				    <option value="titulo">Titulo</option>
+				    <option value="editorial">Editorial</option>
+				    <option value="autor">Autor</option>
 				</select>
             </div>
             <ul>
-                <li ng-repeat="todo in todos | filter:searchText"><img class="col-md-1 col-sm-5 col-xs-5 col-md-offset-1" src="{{todo.imagen}}" alt="img">
+                <li ng-repeat="todo in todos | filter:searchText | orderBy:order"><img class="col-md-1 col-sm-5 col-xs-5 col-md-offset-1" src="{{todo.imagen}}" alt="img">
                     <h3>{{todo.id}} <a href="index2.html">{{todo.titulo}} </a><br></h3>
                     <h5> <b>{{todo.autor}} <br> {{todo.editorial}}</b> <br> </h5>{{todo.Descripcion}}</li>
             </ul>
     </div>
+    <div class="container foot navbar-inverse" style="color:white">
+        <footer>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <h4>Who We Are</h4>
+                <p>We are a little online bookstore with a great variety of books.
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <h4>Get in Touch</h4>
+                <p>Want to get in touch with us? There's a few easy ways.</p>
+                <p>Chihuahua,FL 1500 <a href='index.html'>lotr@mail.com</a></p>
+            </div>
+    </div>
+    </footer>
 </body>
 <script src="js/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
